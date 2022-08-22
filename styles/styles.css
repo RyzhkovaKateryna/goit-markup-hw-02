@@ -55,7 +55,7 @@
 /* styles navigation */
 .logo {
     font-family: var(--secondary-font);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
@@ -93,7 +93,7 @@
     color: var(--accent-txt-cl);
 }
 /* active pages */
-.item-nav :active {
+.current-page:active {
 color: var(--accent-bg-cl);
 }
 /* styles for hero */
@@ -200,16 +200,20 @@ color: var(--accent-bg-cl);
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--black-txt-cl);
-    cursor: pointer;
-    background: var(--grey-team-bg-cl);
+
 }
 
-.btn-project :hover,
-.btn-project :focus,
-.btn-project :active {
+.button.primary-btn:hover
+.button.primary-btn:focus,
+.button.primary-btn:active {
     color: var(--light-txt-cl);
     background-color: var(--accent-bg-cl);
+}
+.button.secondary-btn:hover
+.button.secondary-btn:focus,
+.button.secondary-btn:active {
+    color: var(--black-txt-cl);
+    background-color: var(--grey-team-bg-cl);
 }
 .subtitle-project {
     font-weight: 700;
