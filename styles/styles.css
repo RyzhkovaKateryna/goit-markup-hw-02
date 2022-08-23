@@ -57,7 +57,7 @@
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height:  calc(31/26);
     letter-spacing: 0.03em;
     color: var(--black-txt-cl);
     text-shadow: var(--shadow-txt-cl);
@@ -74,34 +74,36 @@
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16/14);
     letter-spacing: 0.02em;
-    
     color: var(--grey-txt-cl);
 }
 .item-nav {
     color: var(--black-txt-cl);    
 }
 .header-link:hover, 
-.header-link:focus,
-.header-link:active {
+.header-link:focus{
     color: var(--accent-txt-cl);
 }
 .item-nav:hover, 
-.item-nav:focus,
-.item-nav:active {
+.item-nav:focus
+{
     color: var(--accent-txt-cl);
 }
-/* active pages */
-.current-page:active {
-color: var(--accent-bg-cl);
+/* active pages, btn */
+.current-page {
+    color: var(--accent-bg-cl);
+}
+.primary-btn {
+    color: var(--light-txt-cl);
+    background-color: var(--accent-bg-cl);
 }
 /* styles for hero */
 
 .main-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height:  calc(60/44);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -111,7 +113,7 @@ color: var(--accent-bg-cl);
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: calc(30/16);
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -122,9 +124,9 @@ color: var(--accent-bg-cl);
     border-radius: 4px;
 }
 
-.btn :hover,
-.btn :focus,
-.btn :active {
+.btn, .button:hover,
+.btn, .button:focus,
+.btn, .button:active {
     color: var(--light-txt-cl);
     background-color: var(--accent-bg-cl);
 }
@@ -133,14 +135,14 @@ color: var(--accent-bg-cl);
 .subtitle {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-cl);
 }
 .feature-content {
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/14);
     letter-spacing: 0.03em;
 
 }
@@ -148,7 +150,7 @@ color: var(--accent-bg-cl);
 .title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
@@ -156,14 +158,14 @@ color: var(--accent-bg-cl);
 .subtitle-team {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl); 
 }
 .team-content {
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -174,7 +176,7 @@ color: var(--accent-bg-cl);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/14);
     letter-spacing: 0.03em; 
     color: var(--light-txt-cl-60);   
 }
@@ -182,13 +184,11 @@ color: var(--accent-bg-cl);
     color: var(--light-txt-cl);
 }
 .adres:hover, 
-.adres:focus,
-.adres:active {
+.adres:focus{
     color: var(--accent-txt-cl);
 }
 .footer-link:hover,
-.footer-link:focus,
-.footer-link:active {
+.footer-link:focus {
     color: var(--accent-txt-cl);
 }
 /* styles for portfolio */
@@ -196,35 +196,21 @@ color: var(--accent-bg-cl);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: calc(26/16);
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-
-}
-
-.button.primary-btn:hover
-.button.primary-btn:focus,
-.button.primary-btn:active {
-    color: var(--light-txt-cl);
-    background-color: var(--accent-bg-cl);
-}
-.button.secondary-btn:hover
-.button.secondary-btn:focus,
-.button.secondary-btn:active {
-    color: var(--black-txt-cl);
-    background-color: var(--grey-team-bg-cl);
 }
 .subtitle-project {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: calc(36/18);
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
 }
 .project-content {
    font-size: 16px;
-   line-height: 30px;
+   line-height: calc(30/16);
    letter-spacing: 0.03em;    
    color: var(--grey-txt-cl);
 }
