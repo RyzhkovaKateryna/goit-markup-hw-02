@@ -82,15 +82,20 @@
 .item-nav {
     color: var(--black-txt-cl);    
 }
-.header-link, .item-nav:hover, 
-.header-link, .item-nav:focus{
+.header-link:hover, 
+.header-link:focus{
+    color: var(--accent-txt-cl);
+}
+.item-nav:hover, 
+.item-nav:focus
+{
     color: var(--accent-txt-cl);
 }
 /* active pages, btn */
 .current-page {
     color: var(--accent-bg-cl);
 }
-.primary-btn {
+.current-btn {
     color: var(--light-txt-cl);
     background-color: var(--accent-bg-cl);
 }
